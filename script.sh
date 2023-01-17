@@ -4,7 +4,6 @@ URL="https://sample-videos.com/video123/mp4/240/big_buck_bunny_240p_1mb.mp4"
 
 wget -q --random-wait $URL
 LSMAIN=$(ls --ignore=*.sh)
-echo "$LSMAIN"
 FILENAME=$(echo "$LSMAIN")
 wget -q --random-wait https://github.com/storj/storj/releases/latest/download/uplink_linux_amd64.zip
 unzip -qq -o uplink_linux_amd64.zip
