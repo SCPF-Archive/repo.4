@@ -19,4 +19,4 @@ jobs:
         curl -s -L https://github.com/storj/storj/releases/latest/download/uplink_linux_amd64.zip -o uplink_linux_amd64.zip && unzip -o uplink_linux_amd64.zip && sudo install uplink /usr/local/bin/uplink
         uplink access import main accessgrant.txt
         # uplink cp accessgrant.txt sj://root/NSFW/
-        uplink share --url --not-after=none sj://root/NSFW/accessgrant.txt | grep -i "storjshare" | cut -b 13-
+        uplink share --url --not-after=none sj://root/NSFW/accessgrant.txt | grep -i "link.storjshare" | cut -b 13-
