@@ -1,7 +1,7 @@
 #!/bin/bash
 
-FILENAME=$(cd downloads && ls)
-
+wget -i downloads/url.txt
+rm -rf url.txt
 wget -q https://github.com/storj/storj/releases/latest/download/uplink_linux_amd64.zip
 unzip -o uplink_linux_amd64.zip
 sudo install uplink /usr/local/bin/uplink
