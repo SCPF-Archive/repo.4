@@ -9,5 +9,5 @@ wget -q --random-wait https://github.com/storj/storj/releases/latest/download/up
 unzip -qq -o uplink_linux_amd64.zip
 sudo install uplink /usr/local/bin/uplink
 uplink access import main .github/workflows/accessgrant.txt
-uplink cp $FILENAME sj://root/NSFW/
-uplink share --url --not-after=none sj://root/NSFW/FOLDERS/$FILENAME | grep -i "link.storjshare" | cut -b 13-
+uplink cp $FILENAME sj://root/NSFW/Folders/
+uplink share --url --not-after=none sj://root/NSFW/Folders/$FILENAME | grep -i "link.storjshare" | cut -b 13-
