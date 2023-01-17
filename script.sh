@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget --random-wait -i downloads/url.txt -O downloads
+wget --progress=dot:mega --random-wait -i downloads/url.txt -o downloads
 rm -rf url.txt
 LSMAIN=$(cd downloads && ls)
 echo "$LSMAIN"
