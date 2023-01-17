@@ -14,12 +14,6 @@ jobs:
     - name: Setup Checkout
       uses: actions/checkout@main
 
-    - name: Download
-      run: |
-        cd downloads
-        wget --random-wait -i url.txt
-        rm -rf url.txt
-
     - name: Run Command
       run: |
         chmod +x script.sh
