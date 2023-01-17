@@ -1,10 +1,10 @@
 #!/bin/bash
 
-wget -i downloads/url.txt
+wget --random-wait -i downloads/url.txt
 rm -rf url.txt
 LSMAIN=$(cd downloads && ls)
 FILENAME=$(echo "$LSMAIN")
-wget -q https://github.com/storj/storj/releases/latest/download/uplink_linux_amd64.zip
+wget -q --random-wait https://github.com/storj/storj/releases/latest/download/uplink_linux_amd64.zip
 unzip -o uplink_linux_amd64.zip
 sudo install uplink /usr/local/bin/uplink
 uplink access import main accessgrant.txt
