@@ -1,9 +1,6 @@
 name: Run
 
 on:
-  push:
-    path: "*"
-
   workflow_dispatch:
 
 jobs:
