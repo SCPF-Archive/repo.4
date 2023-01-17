@@ -1,0 +1,12 @@
+name: Run
+
+on:
+  workflow_dispatch:
+
+jobs:
+  Start:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Setup Checkout
+      uses: actions/checkout@main
