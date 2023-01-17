@@ -1,7 +1,5 @@
 #!/bin/bash
 
-wget --random-wait -i downloads/url.txt
-rm -rf url.txt
 LSMAIN=$(cd downloads && ls)
 echo "$LSMAIN"
 #wget -q --random-wait https://github.com/storj/storj/releases/latest/download/uplink_linux_amd64.zip
