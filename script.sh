@@ -2,7 +2,7 @@
 
 URL="https://sample-videos.com/video123/mp4/240/big_buck_bunny_240p_1mb.mp4"
 
-$HOMEDIR="$(pwd)"
+$HOMEDIR="$(pwd)/Files/1.txt"
 chmod +x $HOMEDIR
 $FILESDIR="$(ls -1)"
 # wget -q --random-wait $URL
@@ -12,5 +12,5 @@ wget -q --random-wait https://github.com/storj/storj/releases/latest/download/up
 unzip -qq -o uplink_linux_amd64.zip
 sudo install uplink /usr/local/bin/uplink
 uplink access import main .github/workflows/accessgrant.txt
-uplink cp "$HOMEDIR"/Files/1.txt sj://root/
+uplink cp $HOMEDIR sj://root/
 # uplink share --url --not-after=none sj://root/NSFW/$FILENAME | grep -i "link.storjshare" | cut -b 13-
