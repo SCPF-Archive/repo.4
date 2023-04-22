@@ -2,7 +2,7 @@
 
 URL="https://sample-videos.com/video123/mp4/240/big_buck_bunny_240p_1mb.mp4"
 
-$HOMEDIR="$(pwd)/Files/1.txt"
+$HOMEDIR="$($pwd/Files/1.txt)"
 $FILESDIR="$(ls -1)
 # wget -q --random-wait $URL
 # LSMAIN=$(ls --ignore=*.sh)
